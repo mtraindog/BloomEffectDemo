@@ -31,13 +31,11 @@ public class BloomEffect
         _blurStrength = blurStrength;
         _blurPasses = blurPasses;
         
-        // Initialize with current ParticleField bounds
         Resize(width, height);
     }
     
     public void Resize(int width, int height)
-    {
-        // Get current dimensions from ParticleField (scaled by 2 for the scale matrix)
+    {        
         int scaledWidth = width;
         int scaledHeight = height;
         
